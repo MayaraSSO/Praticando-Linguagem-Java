@@ -1,4 +1,4 @@
-public olavida;
+package olavida;
 
 public class olavida
 {
