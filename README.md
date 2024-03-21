@@ -1,9 +1,9 @@
-# Praticando-Linguagem-Java
+## Praticando-Linguagem-Java
 Projetos que fazem parte do meu caminho de aprendizagem em Java
 
 
 
-    /*  Exemplo de identificadores válidos
+    #Exemplo de identificadores válidos
     int _a;
     int $c; 
     int _______2_w; 
