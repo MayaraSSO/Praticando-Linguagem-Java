@@ -2,8 +2,9 @@
 Projetos que fazem parte do meu caminho de aprendizagem em Java
 
 
-##Classes e seus componentes
+## Classes e seus componentes
     
+   ###Identificadores 
     Exemplo de identificadores válidos
     int _a;
     int $c; 
@@ -23,16 +24,16 @@ Projetos que fazem parte do meu caminho de aprendizagem em Java
         
             Classes: – Os identificadores devem ter a primeira letra maiúscula.
             – Os identificadores devem ser substativos;
-         */
+         
 
 
-        /* 
-            Métodos: 
+         
+    ### Métodos: 
             Os identificadores de METODOS devem ter a primeira letra minúscula e o formato “camelCase” deve ser utilizado.
             – Os identificadores devem ser do tipo verbo-substativo;
-        */
+        
 
-        /*
+        
             Variáveis: – como os métodos, os identificadores devem ter a primeira letra minúscula e o formato “camelCase” deve ser utilizado.
             – A Sun recomenda que os identificadores devem ser curtos e significativos;
          */
