@@ -2,15 +2,15 @@
 Projetos que fazem parte do meu caminho de aprendizagem em Java
 
 
-
+##Classes e seus componentes
+    
     Exemplo de identificadores válidos
     int _a;
     int $c; 
     int _______2_w; 
     int _$; 
     int um_nome_bem_detalhado_de_identificador; 
-    */
-    /* 
+     
     Exemplos de identificadores inválidos; 
         int ;b;     Só podem começar com caracter de $ _ ou letras
         int –d;     Só podem começar com caracter de $ _ ou letras
@@ -18,14 +18,9 @@ Projetos que fazem parte do meu caminho de aprendizagem em Java
         int .f;     Só podem começar com caracter de $ _ ou letras
         int 7g;     Só podem começar com caracter de $ _ ou letras
       
-     
-    */  
-        /* 
         um bom exercício é identificar os motivos pelos quais os identificadores
         acima são inválidos!
-        */
-
-        /*
+        
             Classes: – Os identificadores devem ter a primeira letra maiúscula.
             – Os identificadores devem ser substativos;
          */
