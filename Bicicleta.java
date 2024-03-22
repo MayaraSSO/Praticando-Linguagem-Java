@@ -15,13 +15,17 @@ public class Bicicleta {
 
         public Bicicleta(int velocidadeMaxima) {
             this.velocidadeMaxima = velocidadeMaxima;
+            //A palavra-chave this é usada para se referir à instância atual do objeto. Neste caso, this.velocidadeMaxima se refere ao campo velocidadeMaxima do objeto que está sendo criado, e velocidadeMaxima é o valor passado para o construtor. Portanto, this.velocidadeMaxima = velocidadeMaxima; define o valor do campo velocidadeMaxima do objeto para o valor passado para o construtor.
         }
+        //Este é um construtor que aceita um parâmetro velocidadeMaxima. Quando um novo objeto Bicicleta é criado, você pode especificar um valor para velocidadeMaxima, e esse valor será usado para definir o campo velocidadeMaxima do objeto.
 
+            
     
         void mudarMarcha(int novoValor) {
             marcha = novoValor;
         }
     //Este é um método chamado mudarMarcha(). Ele recebe um parâmetro novoValor e atribui esse valor à variável de instância marcha.
+
 
     void acelerar(int incremento) {
         if (velocidade + incremento <= velocidadeMaxima) {
@@ -30,7 +34,8 @@ public class Bicicleta {
             System.out.println("A velocidade máxima foi atingida.");
         }
     }
-    //Este é um método chamado acelerar(). Ele recebe um parâmetro incremento e adiciona esse valor à variável de instância velocidade.
+    //Este é um método chamado acelerar(). Ele recebe um parâmetro incremento e adiciona esse valor à variável de instância velocidade caso ela seja menor ou igual a velocidade maxima permitida, caso contrário ele vaiimprimir  "A velocidade máxima foi atingida".
+
     
         void freiar(int decremento) {
             velocidade = velocidade - decremento;
