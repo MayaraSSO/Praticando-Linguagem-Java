@@ -1,0 +1,158 @@
+
+    //Variáveis (Material -->> Professor: Fellipe Duarte)
+
+        /* 
+        Os tipos primitivos pode ser: 
+            • char;
+            • boolean; 
+            • byte; 
+            • short; 
+            • int; 
+            • long; 
+            • double;
+            • float.
+        */
+
+        /*
+         * Uma variável de referência: 
+            – É usada para referenciar (ou acessar) um objeto. – Pode referenciar qualquer objeto do tipo declarado ou de um subtipo do tipo declarado.
+                // Exemplo de variaveis de referencia
+                    Object o;  
+                    Cachorro meuCachorro; 
+                    String s1,s2,s3; // tres variaveis do tipo String
+         */
+
+         /*
+          * Variáveis podem ser classificadas como: 
+            – Variáveis de instância (não estáticas) : 
+            • O valor de cada variável é único para cada instância da classe (em outras palavras, para cada objeto).
+                 • Por exemplo: a velocidadeAtual de uma bicicleta é independende da velocidadeAtual de outra bicicleta;
+
+            – Variáveis de classe (estáticas) : 
+            • Compartilha o mesmo valor da variável com todas as instâncias daquela classe. 
+                • Por exemplo: Uma variável definindo o número de marchas de um tipo de bicicleta terá seu valor aplicado a todos os objetos da mesma classe (static int marchas = 5);
+          */
+
+
+          /*
+           * Variáveis podem ser classificadas como: 
+            • Variáveis locais : Similar a como um objeto armazena seu estado em variáveis de instâncias, um método oferece variáveis locais para armazenas seu estado temporário;
+            • Parâmetros : variável que recebe os valores que devem ser manipulados dentro do método, ela também faz parte da identificação.
+            
+                Variáveis locais só existem no escopo de um bloco. Logo, as variáveis locais definidas dentro de um bloco não são visíveis fora do bloco.
+                Um bloco é definido como um conjunto de operações incluídas dentro de ‘{’ e ‘}’.
+                Regra #11: Modificadores de acesso NÃO são aplicados a Variáveis locais ou em parâmetros
+           */
+
+
+           /*
+            public class Cachorro { 
+                public void late(){
+                    System.out.println(“onomatopéia do cachorro!”);
+            } 
+            } 
+            public static void main(){
+                // criando uma variavel do tipo Cachorro; Cachorro bingo;
+                //Instanciando um novo cachorro e associando a variavel bingo que e do tipo Cachorro 
+                bingo = new Cachorro(); 
+                bingo.late();
+            }
+            */
+
+
+            /*
+             A primitiva char (um caractere) contém um único caractere unicode de 16-bits.
+
+             O conjunto ascii estendido conhecido como ISO Latin-1 necessita apenas de 8 bits, porém um intervalo maior é necessário para conter todos os caracteres contidos em línguas além do inglês.
+            */
+
+            /*
+             * Variáveis instância são definidas dentro da classe, porém fora de qualquer método ou bloco e são inicializadas apenas quando a classe for instanciada.
+                * Variáveis de instância estão associado apenas ao seu objeto.
+             
+                    // Exemplo de variaveis de instancia
+                    class Empregado{ 
+                        // definir as variaveis de instancia
+                        private String nome; 
+                        private String titulo;
+                        private Empregado gerente;
+                     }
+
+                Regra #12 : Variáveis de instância NÃO podem ser modificadas com static ou abstract
+             */
+
+
+             /*
+              * Variáveis de classe (estáticas) são variáveis com valores compartilhados pela classe e suas instâncias.
+                    Regra #13 : Variáveis de classe são definidas por meio do modificador static
+
+                        class Carro{  
+                            // variavel de classe  
+                            public static velocidadeMaxima = 90; 
+                            public static void main(String[] args){ 
+                                Veiculo carro1 = new Veiculo();  
+                                Veiculo carro2 = new Veiculo(); 
+
+                            System.out.println(“Carro1:”+carro1.velocidadeMaxima);
+                            System.out.println(“Carro2:”+carro2.velocidadeMaxima); 
+                            carro1.velocidadeMaxima = 110;
+                            System.out.println(“Carro2:”+carro2.velocidadeMaxima); 
+                            }
+                        }
+                    
+                    Saída: 
+                        Carro1: 90 
+                        Carro2:90
+                        Carro2:110
+              */
+
+
+              /*
+               Variáveis locais são variáveis declaradas dentro de um método ou um bloco. 
+               Isto significa que a variável é declarada e inicializada dentro do método/bloco. 
+               Ela surge com o método/bloco e é destruída com o término do método/bloco.
+                        // Exemplo de variaveis de instancia
+                        class Teste{ 
+                        public void logIn(){
+                            // variavel local do metodo ”logIn” 
+                            int tentativas = 3;
+                            for (int i=1; i<tentativas;i++){ // variavel local do for
+                                String legenda = “tentativa ”+i;
+                         }
+                    }
+
+                Regra #14 : Variáveis locais não podem ser acessadas fora do método/bloco.
+               */
+
+
+               /*
+                *  Parâmetros são um conjunto da variáveis separadas por vírgulas, que estão relacionados com a assinatura de um método e podem ser: Uma primitiva, uma variável de referência ou do tipo var-arg (argumentos variáveis)
+                    Regra #15 : Var-args SEMPRE são os últimos na declaração do método.
+
+                        // Exemplo de parametros
+                        class TestandoParametros{ 
+                            // parametros primitivas
+                                public void metodo1(int n1,float n2, double n3){} 
+                            // parametros variaveis de referencia
+                                public void metodo2(Object o1, Object o2){} 
+                            // parametros: 1 parametro primitivo e var-args 
+                                public void metodo3(int n1,char... n2){ }
+                        }
+
+                    Não é possível declarara mais de um var-arg por método!
+                */
+
+
+                /*
+                 * E as variáveis portadoras de objetos? 
+                 * O que elas manipulam? 
+                   • Por exemplo: – Navio n = new Navio(); – O que está dentro da variável n NÃO é uma instancia (um objeto) do tipo Navio. Elas são variáveis de referência !!
+                 */
+
+                 /*
+                  * Pensando na variável de referência como um manipulador de bits: – Ela contém bits representando uma forma de chegar ao objeto. 
+                    – Isto é, tudo que podemos afirmar é que o valor da variável NÃO é o objeto mas o valor representando um objeto específico na heap ou null. 
+                    Por exemplo: 
+                    • Button b = null;
+                    • Significa : “A variável b referencial a NENHUM objeto”
+                  */

@@ -1,4 +1,6 @@
-public class Identificar {
+
+//Classes e seus componentes (Material -->> Professor: Fellipe Duarte)
+    
     /*  Exemplo de identificadores válidos
     int _a;
     int $c; 
@@ -139,4 +141,4 @@ public class Identificar {
                         Regra #10 : Construtores NÃO tem tipo de retorno!
                         Note que NÃO é possível utilizar modificadores em métodos construtores.
                  */
-                        }
+
